@@ -40,4 +40,4 @@ del comp, teams, teams_gp
 
 comp_m.sort_values('DeadlineDate', ascending=False, inplace=True)
 comp_m = comp_m[comp_m.CanQualifyTiers == True]
-comp_m.to_csv('./shakeshake.csv', index=False)
+comp_m.to_csv('./shakeshake.zip', index=False, compression='zip')
